@@ -15,16 +15,18 @@ npm i codeceptjs-monocart-coverage
 ```js
 // codecept.conf.js
 {
-   plugins: {
+    plugins: {
         monocart: {
             require: 'codeceptjs-monocart-coverage',
             enabled: true,
             coverageOptions: {
+                name: 'My CodeceptJS Coverage Report',
                 outputDir: 'coverage-reports'
             }
         }
     },
     helpers: {
+        // Coverage is only supported in Playwright or Puppeteer
         Playwright: {
             browser: 'chromium',
             url: 'http://localhost',
