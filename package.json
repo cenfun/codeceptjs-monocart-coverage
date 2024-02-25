@@ -1,0 +1,36 @@
+{
+    "name": "codeceptjs-monocart-coverage",
+    "version": "1.0.0",
+    "description": "CodeceptJS Monocart Coverage Reports",
+    "main": "lib/index.js",
+    "exports": {
+        ".": {
+            "types": "./lib/index.d.ts",
+            "import": "./lib/index.mjs",
+            "require": "./lib/index.js",
+            "default": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "types": "./lib/index.d.ts",
+    "scripts": {
+        "test": "npx codeceptjs run --steps",
+        "link": "sf link ./ -f",
+        "patch": "npm run test && sf publish patch -r"
+    },
+    "files": [
+        "lib"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "monocart-coverage-reports": "^2.5.7"
+    },
+    "devDependencies": {
+        "codeceptjs": "^3.5.14",
+        "eslint": "^8.57.0",
+        "eslint-config-plus": "^1.0.6",
+        "eslint-plugin-codeceptjs": "^1.3.0",
+        "playwright": "^1.41.2",
+        "puppeteer": "^22.2.0"
+    }
+}
