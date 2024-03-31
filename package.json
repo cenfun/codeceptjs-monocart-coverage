@@ -23,14 +23,14 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "monocart-coverage-reports": "^2.5.7"
+        "monocart-coverage-reports": "^2.7.8"
     },
     "devDependencies": {
-        "codeceptjs": "^3.5.14",
+        "codeceptjs": "^3.5.15",
         "eslint": "^8.57.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-codeceptjs": "^1.3.0",
-        "playwright": "^1.41.2",
-        "puppeteer": "^22.2.0"
+        "playwright": "^1.42.1",
+        "puppeteer": "^22.6.1"
     }
 }
