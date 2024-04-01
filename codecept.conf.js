@@ -1,7 +1,8 @@
 const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
-setHeadlessWhen(process.env.HEADLESS);
+// setHeadlessWhen(process.env.HEADLESS);
+setHeadlessWhen(true);
 
 // enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
 setCommonPlugins();
@@ -29,6 +30,7 @@ exports.config = {
             }
         }
     },
+
     helpers: {
         Playwright: {
             browser: 'chromium',
@@ -39,9 +41,11 @@ exports.config = {
         //     url: 'http://localhost',
         //     show: false
         // }
+        // WebDriver: {
+        //     url: 'http://localhost',
+        //     browser: 'chrome'
+        // }
     },
-    include: {
 
-    },
     name: 'codeceptjs-monocart-coverage'
 };
