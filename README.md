@@ -36,6 +36,10 @@ npm i codeceptjs-monocart-coverage
         //     url: 'http://localhost',
         //     show: false
         // }
+        // WebDriver: {
+        //     url: 'http://localhost',
+        //     browser: 'chrome'
+        // }
     }
 }
 ```
