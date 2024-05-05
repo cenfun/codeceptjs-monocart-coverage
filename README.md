@@ -3,8 +3,10 @@
 [![](https://badgen.net/npm/dw/codeceptjs-monocart-coverage)](https://www.npmjs.com/package/codeceptjs-monocart-coverage)
 ![](https://img.shields.io/github/license/cenfun/codeceptjs-monocart-coverage)
 
-
 > A [CodeceptJS](https://github.com/codeceptjs/CodeceptJS/) plugin for [monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports)
+
+> [!TIP]  
+> CodeceptJS has integrated `MCR` since [v3.5.15](https://github.com/codeceptjs/CodeceptJS/releases/tag/3.5.15), see [plugins/coverage](https://codecept.io/plugins/#coverage). There's no need to use this plugin anymore.
 
 ## Install
 ```sh
